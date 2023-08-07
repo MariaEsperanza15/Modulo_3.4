@@ -204,12 +204,27 @@ header .social-icon li a
 /* start home */
 #home
 	{
-		background: url('../images/home-bg.jpg') no-repeat;
+		background: url('../images/imagen_5.jpg') no-repeat;
 		background-size: cover;
+		position: relative;
+		background-position: center;
 		padding-top: 160px;
 		padding-bottom: 100px;
 		min-height: 650px;
+		
 	}
+#home::before{
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	min-height: 650px;
+	/* Cambiar mascara */
+    background-image: linear-gradient(to bottom, rgba(118, 15, 153, 0.668), rgba(4, 57, 63, 0.7)); /* Cambia los colores y opacidades según tus preferencias */
+    z-index: 0; /* Asegúrate de que la cubierta esté por encima del contenido del encabezado */
+}
+
 #home h1
 	{
 		font-weight: 300;
@@ -224,14 +239,14 @@ header .social-icon li a
 #home .btn
 	{
 		background: transparent;
-		border-radius: 2px;
+		border-radius: 60px;
 		color: #fff;
 		font-size: 16px;
 		font-weight: bold;
 		margin-top: 20px;
-		width: 180px;
-		height: 60px;
-		padding-top: 18px;
+		width: 50%;
+		height: 40px;
+		padding-top: 8px;
 		-webkit-transition: all 0.4s ease-in-out;
 		        transition: all 0.4s ease-in-out;
 	}
@@ -244,6 +259,8 @@ header .social-icon li a
 	height: 60px;
 	font-size: 16px;
 }
+
+
 /* end home */
 
 /* start about */
